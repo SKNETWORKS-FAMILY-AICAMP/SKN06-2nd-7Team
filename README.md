@@ -40,14 +40,25 @@
 import warnings
 warnings.filterwarnings(action='ignore')
 ```
-- import
+- import libraries
 ```bash
+# sklearn modules for machine learning
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
+# sklearn modules for deep learning
+import pandas as pd
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, classification_report
+import matplotlib.pyplot as plt
 ```
 <br/>
 
