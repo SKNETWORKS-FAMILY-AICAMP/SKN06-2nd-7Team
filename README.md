@@ -34,12 +34,12 @@
 
 <br/>
 
-### 01. 데이터 전처리 결과
-## 학습데이터에 대한 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
+## 01. 데이터 전처리 결과
+### 학습데이터에 대한 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
 -  [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
-## 결측치 처리 방법 및 이유
-## 이상치 판정 기준과 처리 방법 및 이유
-## Feature Engineering 방식
+### 결측치 처리 방법 및 이유
+### 이상치 판정 기준과 처리 방법 및 이유
+### Feature Engineering 방식
 
 <br/>
 
@@ -47,10 +47,10 @@
 
 <br/>
 
-### 02. 모델 학습 결과서
-## 모델 평가에 사용된 평가 지표 설명
-## 최종 선정 모델에 대한 설명
-## 학습 과정
+## 02. 모델 학습 결과서
+### 모델 평가에 사용된 평가 지표 설명
+### 최종 선정 모델에 대한 설명
+### 학습 과정
 
 <br/>
 
@@ -58,5 +58,5 @@
 
 <br/>
 
-### 03. 학습된 모델 & Service application
-## 최종 모델을 이용해 추론하는 application을 streamlit을 이용해 구현한 코드
+## 03. 학습된 모델 & Service application
+### 최종 모델을 이용해 추론하는 application을 streamlit을 이용해 구현한 코드
