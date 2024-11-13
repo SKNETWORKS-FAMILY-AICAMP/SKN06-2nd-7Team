@@ -34,10 +34,32 @@
 
 <br/>
 
+## 00. 시작 가이드
+- 오류 메시지 관리
+```bash
+import warnings
+warnings.filterwarnings(action='ignore')
+```
+- import
+```bash
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score, classification_report
+```
+<br/>
+
+<hr>
+
+<br/>
+
 ## 01. 데이터 전처리 결과
-### 학습데이터에 대한 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
--  [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
+### 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
+- Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
 ### 결측치 처리 방법 및 이유
+- 데이터 분포, 변수 간 이탈과의 상관관계 분석
 ### 이상치 판정 기준과 처리 방법 및 이유
 ### Feature Engineering 방식
 
