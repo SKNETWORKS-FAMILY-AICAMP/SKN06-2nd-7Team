@@ -15,7 +15,7 @@
 ### 개발팀 👩‍💻👨‍💻
 | 조하늘 | 정지원 | 정민준 | 김지영 |
 |:----------:|:----------:|:----------:|:----------:|
-| <img src="https://github.com/user-attachments/assets/7d90917b-71b8-40b9-9f98-0d415e239a74" alt="하늘" width="145" height="165" />  | <img src="https://github.com/user-attachments/assets/5c527f33-fa36-4c14-b6b3-a9594abe0425" alt="박창규" width="150" height="150" />  | <img src="https://github.com/user-attachments/assets/5179910a-50f5-4ec5-b23c-b90515c17cd1" alt="공인용" width="160" height="150" /> | <img src="https://github.com/user-attachments/assets/bab22e54-d0ba-4a1a-9e30-1fc6b497b651" alt="김지영" width="150" height="150" />|
+| <img src="https://github.com/user-attachments/assets/7d90917b-71b8-40b9-9f98-0d415e239a74" alt="하늘" width="145" height="165" />  | <img src="https://github.com/user-attachments/assets/ea3612d5-1ea9-4569-a8b4-93e41bf4b3ef" alt="지원" width="150" height="150" />  | <img src="https://github.com/user-attachments/assets/affdd054-b3bb-4eb3-91fd-c84b0ef80eba" alt="민준" width="160" height="150" /> | <img src="https://github.com/user-attachments/assets/0919f569-653f-4074-b0bf-e11f15b7c3f9" alt="지영" width="150" height="150" />|
 | [@Haneul-Jo7](https://github.com/Haneul-Jo7) | [@giana-jw](https://github.com/giana-jw) | [@samking1234-Apple](https://github.com/samking1234-Apple) | [@yeong-ee](https://github.com/yeong-ee) |
 
 <br/>
