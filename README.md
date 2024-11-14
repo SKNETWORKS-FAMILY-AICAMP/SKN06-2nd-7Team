@@ -85,6 +85,7 @@ import matplotlib.pyplot as plt
 - Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
 - Target data 분포 확인 - 직원 퇴사율
 <img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" />
+
 - 수치형 변수, 범주형 변수에 대한 시각화
 <img src="https://github.com/user-attachments/assets/f6899123-784f-417d-87f5-ed729c597933" alt="eda_boxplot" />
 <img src="https://github.com/user-attachments/assets/8c71dcb5-9378-4717-89ae-237514dc1078" alt="eda_boxplot(2)" />
