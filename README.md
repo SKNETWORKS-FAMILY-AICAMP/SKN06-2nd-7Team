@@ -84,8 +84,10 @@ import matplotlib.pyplot as plt
 ### 1-1. 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
 - Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
 <br/>
+<br/>
 - Target data 분포 확인 - 직원 퇴사율
 <img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" />
+<br/>
 <br/>
 - 수치형 변수, 범주형 변수에 대한 시각화
 <img src="https://github.com/user-attachments/assets/f6899123-784f-417d-87f5-ed729c597933" alt="eda_boxplot" />
@@ -94,8 +96,10 @@ import matplotlib.pyplot as plt
 <img src="https://github.com/user-attachments/assets/cba0292e-1c07-4e02-a252-d321824afad0" alt="eda_countplot(1)" />
 <img src="https://github.com/user-attachments/assets/b955b207-572c-4a92-b153-5646e2f02eac" alt="eda_boxplot(2)" />
 <br/>
+<br/>
 - Correlation Matrix Heatmap - 수치형 변수 상관관계 분석
 <img src="https://github.com/user-attachments/assets/378378ef-a536-4a10-b2a1-22f088b9ac2f" alt="heatmap" />
+<br/>
 <br/>
 - Chi-square Test - 범주형 변수와 attrition 간의 카이제곱 검정
 <img src="https://github.com/user-attachments/assets/b4c8d449-4c9a-46c4-9e0f-35883b45e304" alt="chi_square_test" />
