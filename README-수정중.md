@@ -211,14 +211,12 @@ import matplotlib.pyplot as plt
 9) 모델 저장
    
 ### 3-3. 모델 평가에 사용된 평가 지표 설명
-1) 머신러닝
-   
-2) 딥러닝
-3) 
+- 본 문제는 이진 분류 문제로서 평가지표로 sklearn.metrics에 있는 classification_report를 활용함.
+- precision, recall, f1-score 활용
+
+  
 ### 3-4. 최종 선정 모델에 대한 설명
-1) 머신러닝
-   
-2) 딥러닝
+- 각 모델링 방법별 우수 모델을 최종 선정모델로 선택. 
 
 <br/>
 
