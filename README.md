@@ -86,39 +86,31 @@ import matplotlib.pyplot as plt
 <br/>
 <br/>
 [Target data 분포 확인 - 직원 퇴사율]
-<p align="center">
-<img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" width="450" height="400"/>
+<img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" style="float: left;" width="450" height="400"/>
 <br/>
 <br/>
 [수치형 변수, 범주형 변수에 대한 시각화]
-<p align="center">
-<img src="https://github.com/user-attachments/assets/f6899123-784f-417d-87f5-ed729c597933" alt="eda_boxplot" width="600" height="400" />
-<p align="center">
-<img src="https://github.com/user-attachments/assets/8c71dcb5-9378-4717-89ae-237514dc1078" alt="eda_boxplot(2)" width="600" height="400"/>
-<p align="center">
-<img src="https://github.com/user-attachments/assets/6668c455-d61d-4daf-a996-80e9569d560a" alt="eda_boxplot(3)" width="600" height="200"/>
-<p align="center">
-<img src="https://github.com/user-attachments/assets/cba0292e-1c07-4e02-a252-d321824afad0" alt="eda_countplot(1)" width="800" height="240"/>
-<p align="center">
-<img src="https://github.com/user-attachments/assets/b955b207-572c-4a92-b153-5646e2f02eac" alt="eda_boxplot(2)" width="560" height="350"/>
+<img src="https://github.com/user-attachments/assets/f6899123-784f-417d-87f5-ed729c597933" alt="eda_boxplot" style="float: left;" width="600" height="400" />
+<img src="https://github.com/user-attachments/assets/8c71dcb5-9378-4717-89ae-237514dc1078" alt="eda_boxplot(2)" style="float: left;" width="600" height="400"/>
+<img src="https://github.com/user-attachments/assets/6668c455-d61d-4daf-a996-80e9569d560a" alt="eda_boxplot(3)" style="float: left;" width="600" height="200"/>
+<img src="https://github.com/user-attachments/assets/cba0292e-1c07-4e02-a252-d321824afad0" alt="eda_countplot(1)" style="float: left;" width="800" height="240"/>
+<img src="https://github.com/user-attachments/assets/b955b207-572c-4a92-b153-5646e2f02eac" alt="eda_boxplot(2)" style="float: left;" width="560" height="350"/>
 <br/>
 <br/>
 [Correlation Matrix Heatmap - 수치형 변수 상관관계 분석]
-<p align="center">
-<img src="https://github.com/user-attachments/assets/378378ef-a536-4a10-b2a1-22f088b9ac2f" alt="heatmap" width="520" height="520" />
+<img src="https://github.com/user-attachments/assets/378378ef-a536-4a10-b2a1-22f088b9ac2f" alt="heatmap" style="float: left;" width="520" height="520" />
 <br/>
 <br/>
 [Chi-square Test - 범주형 변수와 attrition 간의 카이제곱 검정]
-<p align="center">
-<img src="https://github.com/user-attachments/assets/b4c8d449-4c9a-46c4-9e0f-35883b45e304" alt="chi_square_test"  width="`100" height="185" />
+<img src="https://github.com/user-attachments/assets/b4c8d449-4c9a-46c4-9e0f-35883b45e304" alt="chi_square_test" style="float: left;" width="`100" height="185" />
 
 
 
 ### 1-2. 결측치 처리 방법 및 이유
 - 결측치 확인
   - 결측치 없음
-<p align="center">
-<img src="Image/결측치 확인.png"  width="560" height="350"/>
+<div align="left">
+<img src="Image/결측치 확인.png" style="float: left;" width="560" height="350"/>
 
 <br/>
 <br/>
@@ -126,7 +118,7 @@ import matplotlib.pyplot as plt
 ### 1-3. 이상치 판정 기준과 처리 방법 및 이유
 - 이상치 확인
   - 이상치 존재
-<img src="Image/이상치 확인.png" />
+<img src="Image/이상치 확인.png" style="float: left;"/>
 - 이상치 판정 기준
 <br/>
 : Box Plot을 통해 데이터의 분포를 시각화하고, 수염(whiskers) 바깥에 있는 점들을 이상치로 봄. 수염의 바깥에 위치한 값을 이상치로 판단.
