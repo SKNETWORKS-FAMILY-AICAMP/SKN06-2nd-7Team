@@ -161,7 +161,54 @@ import matplotlib.pyplot as plt
 9) 모델 저장
 
 ### 3-2. 딥러닝 모델 학습 과정 및 튜닝
+1) 변수 처리 및 분리
+  - 머신러닝 모델처리와 동일하게 처리함. 
 
+2) 모델 생성 및 학습
+  - 신경망 모델로 학습을 진행함. 모델명 Net.
+<img width="500" src="Image/딥러닝 모델(신경망).png" />
+
+3) 모델예측 및 평가
+  - 초기 모델에 따른 평가 및 예측 진행. 
+<img width="600" src="Image/딥러닝 기초 결과.png" />
+
+4) 특성 중요도 확인
+  - 상위 10개 특성의 중요도를 확인함.
+<img width="600" src="Image/딥러닝 기초모델 특성 중요도 확인.png" />
+
+5) 특성 중요도 시각화
+  - 상위 10개 특성을 도표로 시각화함.
+<img width="800" src="Image/딥러닝 기초모델 특성 중요도 시각화.png" />
+
+6) 모델 및 하이퍼파라미터 그리드 정의 (성능비교)
+ - lr = [0.001, 0.0001, 0.00001]
+ - epochs = [50, 100, 200]
+ - 위의 하이퍼파라미터를 통해 best_model 선정
+
+7) 각 모델 그리드 서치 수행
+<img width="600" src="Image/deeplearning_trainingloss_gridsearchCV.png" />
+<img width="600" src="Image/deeplearning_trainingaccuracy_gridsearchCV.png" />
+
+8) 우수 모델 재학습 및 중요도 결과 산출
+  - lr = 0.0001, epochs = 200 인 모델이 가장 우수한 모델로 선정됨.
+
+8-1. 우수 모델 학습 결과(train loss & accuracy)
+
+<img width="500" src="Image/딥러닝 베스트 모델 에측 및 평가.png" />
+
+
+8-2. 우수 모델 특성 중요도 재확인
+
+ <img width="600" src="Image/우수모델특성중요도.png" />
+
+ 
+8-3. 우수 모델 특성 중요도 시각화
+- 해당 모델에서 중요하다고 판별된 특성들이 이직률에 긍정적인 영향을 끼치는지, 부정적인 영향을 끼치는지 확인.
+- 
+ <img width="800" src="Image/top10featureOfBestmodel_deeplearning.png" />
+
+ 
+9) 모델 저장
    
 ### 3-3. 모델 평가에 사용된 평가 지표 설명
 1) 머신러닝
