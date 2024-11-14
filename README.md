@@ -86,7 +86,11 @@ import matplotlib.pyplot as plt
 #### 1. Target data 분포 확인 - 직원 퇴사율
 <img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" />
 
-### 결측치 처리 방법 및 이유
+### 2. 결측치 및 이상치 처리 방법 및 이유
+1) 결측치 확인 - 결측치 없음
+<img src="Image/결측치 확인.png" />
+2) 이상치 확인
+<img src="Image/이상치 확인.png" />
 - 데이터 분포, 변수 간 이탈과의 상관관계 분석
 ### 이상치 판정 기준과 처리 방법 및 이유
 ### Feature Engineering 방식
