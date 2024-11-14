@@ -130,8 +130,13 @@ import matplotlib.pyplot as plt
   - NumCompaniesWorked, TrainingTimesLastYear, YearsinceLastPromotion, YearsWithCurrManager ▶️ IQR
 <img src="https://github.com/user-attachments/assets/c81ef3ce-9867-410b-861e-4432f4fd2269" alt="monthlyincome_log" style="float: left;" width="520" height="260"/>
 <img src="https://github.com/user-attachments/assets/3990187b-3c32-41d0-ae2e-7a62c9d6f031" alt="iqr" style="float: left;" width="520" height="230"/>
+<br>
+<br>
 
-
+  - 각 변수의 특성과 데이터의 분포를 고려. <br>
+    1) MonthlyIncome(급여)은 일반적으로 양의 값만 가지며, 큰 편차를 가진 비대칭적인 분포를 보일 가능성이 높음. 따라서, 로그 변환으로 큰 값을 줄이고 작은 값의 분포를 늘려 데이터의 비대칭성을 완화하며, 이상치의 영향을 줄임. <br>
+    2) IQR 방식은 변수의 분포가 정규분포가 아닐 경우에도 효과적으로 이상치를 탐지할 수 있으며, 중간 값을 기준으로 이상치를 판단하므로 데이터의 극단적인 값을 고려한 균형 있는 처리가 가능함. <br>
+       ➡️ 각 변수의 분포 특성에 맞는 처리 방식을 적용함으로써, 모델이 더 좋은 일반화 성능을 가지도록 하기 위함.
 <br>
 
 ### 1-4. Feature Engineering 방식
