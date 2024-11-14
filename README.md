@@ -94,7 +94,11 @@ import matplotlib.pyplot as plt
 <img src="https://github.com/user-attachments/assets/b955b207-572c-4a92-b153-5646e2f02eac" alt="eda_boxplot(2)" />
 
 - Correlation Matrix Heatmap - 수치형 변수 상관관계 분석
- <img src="https://github.com/user-attachments/assets/378378ef-a536-4a10-b2a1-22f088b9ac2f" alt="heatmap" />
+<img src="https://github.com/user-attachments/assets/378378ef-a536-4a10-b2a1-22f088b9ac2f" alt="heatmap" />
+
+- Chi-square Test - 범주형 변수와 attrition 간의 카이제곱 검정
+<img src="https://github.com/user-attachments/assets/b4c8d449-4c9a-46c4-9e0f-35883b45e304" alt="chi_square_test" />
+
 
 
 ### 1-2. 결측치 및 이상치 처리 방법 및 이유
