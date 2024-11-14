@@ -82,14 +82,14 @@ import matplotlib.pyplot as plt
 ## 01. 데이터 전처리 결과서
 
 ### 1-1. 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
-- Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
++ Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
 <br/>
 <br/>
-- [Target data 분포 확인 - 직원 퇴사율]
++ [Target data 분포 확인 - 직원 퇴사율]
 <img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" />
 <br/>
 <br/>
-- [수치형 변수, 범주형 변수에 대한 시각화]
++ [수치형 변수, 범주형 변수에 대한 시각화]
 <img src="https://github.com/user-attachments/assets/f6899123-784f-417d-87f5-ed729c597933" alt="eda_boxplot" />
 <img src="https://github.com/user-attachments/assets/8c71dcb5-9378-4717-89ae-237514dc1078" alt="eda_boxplot(2)" />
 <img src="https://github.com/user-attachments/assets/6668c455-d61d-4daf-a996-80e9569d560a" alt="eda_boxplot(3)" />
