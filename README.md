@@ -84,7 +84,7 @@ import matplotlib.pyplot as plt
 ### 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
 - Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
 #### 1. Target data 분포 확인 - 직원 퇴사율
-<img src="[https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f]" alt="퇴사율" />
+<img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" />
 
 ### 결측치 처리 방법 및 이유
 - 데이터 분포, 변수 간 이탈과의 상관관계 분석
