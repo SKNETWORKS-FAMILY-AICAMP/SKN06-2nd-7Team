@@ -117,7 +117,7 @@ import matplotlib.pyplot as plt
 - 이상치 확인 - 이상치 존재
 <img src="Image/이상치 확인.png" />
 - 이상치 판정 기준
-: Box Plot을 통해 데이터의 분포를 시각화하고, 수염(whiskers) 바깥에 있는 점들을 이상치로 봄. 수염의 바깥에 위치한 값을 이상치로 판단.
+: Box Plot을 통해 데이터의 분포를 시각화하고, 수염(whiskers) 바깥에 있는 점들을 이상치로 봄. 수염의 바깥에 위치한 값을 이상치로 판단.<br/>
 - 이상치 처리 방법과 이유
 <br/>
 <br/>
