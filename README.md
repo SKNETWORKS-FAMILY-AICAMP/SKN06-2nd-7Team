@@ -81,19 +81,25 @@ import matplotlib.pyplot as plt
 
 ## 01. 데이터 전처리 결과서
 
-### 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
+### 1-1. 탐색적 데이터 분석(Exploratory Data Analysis, EDA) 수행 결과
 - Dataset: [IBM HR Dataset](https://www.kaggle.com/datasets/mohamedhamdymady/ibmhr-dataset)
-#### 1. Target data 분포 확인 - 직원 퇴사율
+- Target data 분포 확인 - 직원 퇴사율
 <img src="https://github.com/user-attachments/assets/62882687-babe-4fd4-b2cb-70948483012f" alt="퇴사율" />
+- 수치형 변수, 범주형 변수에 대한 시각화
+<img src="https://github.com/user-attachments/assets/f6899123-784f-417d-87f5-ed729c597933" alt="eda_boxplot" />
+<img src="https://github.com/user-attachments/assets/8c71dcb5-9378-4717-89ae-237514dc1078" alt="eda_boxplot(2)" />
+<img src="https://github.com/user-attachments/assets/6668c455-d61d-4daf-a996-80e9569d560a" alt="eda_boxplot(3)" />
+<img src="https://github.com/user-attachments/assets/cba0292e-1c07-4e02-a252-d321824afad0" alt="eda_countplot(1)" />
+<img src="https://github.com/user-attachments/assets/b955b207-572c-4a92-b153-5646e2f02eac" alt="eda_boxplot(2)" />
 
-### 2. 결측치 및 이상치 처리 방법 및 이유
+### 1-2. 결측치 및 이상치 처리 방법 및 이유
 1) 결측치 확인 - 결측치 없음
 <img src="Image/결측치 확인.png" />
 2) 이상치 확인
 <img src="Image/이상치 확인.png" />
 - 데이터 분포, 변수 간 이탈과의 상관관계 분석
-### 이상치 판정 기준과 처리 방법 및 이유
-### Feature Engineering 방식
+### 1-3. 이상치 판정 기준과 처리 방법 및 이유
+### 1-4. Feature Engineering 방식
 
 <br/>
 
