@@ -93,6 +93,10 @@ import matplotlib.pyplot as plt
 <img src="https://github.com/user-attachments/assets/cba0292e-1c07-4e02-a252-d321824afad0" alt="eda_countplot(1)" />
 <img src="https://github.com/user-attachments/assets/b955b207-572c-4a92-b153-5646e2f02eac" alt="eda_boxplot(2)" />
 
+- Correlation Matrix Heatmap - 수치형 변수 상관관계 분석
+ <img src="https://github.com/user-attachments/assets/378378ef-a536-4a10-b2a1-22f088b9ac2f" alt="heatmap" />
+
+
 ### 1-2. 결측치 및 이상치 처리 방법 및 이유
 1) 결측치 확인 - 결측치 없음
 <img src="Image/결측치 확인.png" />
