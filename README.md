@@ -17,7 +17,7 @@
 |:----------:|:----------:|:----------:|:----------:|
 | <img src="https://github.com/user-attachments/assets/7d90917b-71b8-40b9-9f98-0d415e239a74" alt="하늘" width="140" height="175" />  | <img src="https://github.com/user-attachments/assets/ea3612d5-1ea9-4569-a8b4-93e41bf4b3ef" alt="지원" width="140" height="175" />  | <img src="https://github.com/user-attachments/assets/affdd054-b3bb-4eb3-91fd-c84b0ef80eba" alt="민준" width="140" height="175" /> | <img src="https://github.com/user-attachments/assets/0919f569-653f-4074-b0bf-e11f15b7c3f9" alt="지영" width="140" height="175" />|
 | [@Haneul-Jo7](https://github.com/Haneul-Jo7) | [@giana-jw](https://github.com/giana-jw) | [@samking1234-Apple](https://github.com/samking1234-Apple) | [@yeong-ee](https://github.com/yeong-ee) |
-| 전처리, DL | 전처리, ML, git관리 | DL, streamlit | EDA, 전처리, ML |
+| 전처리, DL | DL, streamlit | 전처리, ML, git관리 | EDA, 전처리, ML |
 
 <br>
 
