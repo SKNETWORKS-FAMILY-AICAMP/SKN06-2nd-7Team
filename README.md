@@ -140,6 +140,34 @@ import matplotlib.pyplot as plt
 <br>
 
 ### 1-4. Feature Engineering 방식
+```bash
+# YearsWithOtherCompanies: 다른 회사에서 근무한 연수
+# TotalWorkingYears + YearsAtCompany
+data_cleaned['YearsWithOtherCompanies'] = data_cleaned['TotalWorkingYears'] - data_cleaned['YearsAtCompany']
+data_cleaned['YearsWithOtherCompanies'] = data_cleaned['YearsWithOtherCompanies'].apply(lambda x: max(x, 0))  # 음수 값은 0으로 처리
+
+# AgeAtJoining: 입사 당시 나이
+## Age + YearsAtCompany
+data_cleaned['AgeAtJoining'] = data_cleaned['Age'] - data_cleaned['YearsAtCompany']
+data_cleaned['AgeAtJoining'] = data_cleaned['AgeAtJoining'].apply(lambda x: max(x, 0))  # 음수 값은 0으로 처리
+
+# IncomePerYearWorked: 연차당 소득
+## MonthlyIncome_Log + TotalWorkingYears
+data_cleaned['IncomePerYearWorked'] = data_cleaned['MonthlyIncome_Log'] / (data_cleaned['TotalWorkingYears'] + 1)  # +1을 더해 0으로 나누는 것을 방지
+
+# 새로운 특성 확인
+print("Columns after feature engineering:")
+print(data_cleaned.columns)
+```
+1. YearsWithOtherCompanies: 다른 회사에서 근무한 연수
+   - TotalWorkingYears  (총 근무 연수)에서 YearsAtCompany(현재 회사에서 근무한 연수)를 빼서 다른 회사에서 일한 기간을 계산
+   - 결과 값이 음수일 경우 0으로 처리. (직원이 현재 회사가 첫 직장인 경우를 고려)
+2. AgeAtJoining: 입사 당시 나이
+   - Age(현재 나이)에서 YearsAtCompany(현재 회사에서 근무한 연수)를 빼서 입사 당시 나이를 계산
+   - 결과 값이 음수일 경우 0으로 처리. (음수의 나이가 있을 수 없으므로)
+3. IncomePerYearWorked: 연차당 소득
+   - MonthlyIncome_Log(로그 변환된 월급)을 TotalWorkingYears + 1로 나누어 연차당 소득을 구함.
+   - +1을 추가. (0으로 나누는 것을 방지)
 
 <br>
 
