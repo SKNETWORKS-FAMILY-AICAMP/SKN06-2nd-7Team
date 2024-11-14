@@ -123,9 +123,10 @@ import matplotlib.pyplot as plt
 <img width="500" src="Image/랜덤포레스트 모델 생성 및 학습.png" />
 
 3) 모델예측 및 평가
+  - 과적합이 발생하지 않은 모델로 확인함.
 <img width="600" src="Image/랜덤 포레스트 모델 예측 및 평가.png" />
 
-4) 특성 중요도 확인
+5) 특성 중요도 확인
   - 상위 10개 특성의 중요도를 확인함.
 <img width="600" src="Image/랜덤 포레스트 특성 중요도 확인.png" />
 
@@ -133,10 +134,28 @@ import matplotlib.pyplot as plt
   - 상위 10개 특성을 도표로 시각화함.
 <img width="800" src="Image/랜덤 포레스트 특성 중요도 시각화.png" />
 
+6) 모델 및 하이퍼파라미터 그리드 정의 (성능비교)
+ - Logistic Regression, Random Forest, 'XGBoost 이 3가지 모델로 성능 비교를 결정.
+
+7) 각 모델 그리드 서치 수행
+<img width="600" src="Image/성능비교 결과.png" />
+
+7) 우수 모델 재학습 및 중요도 결과 산출
+  - Logistic Regression이 가장 우수한 모델로 선정됨.
+
+ 7-1. 재학습
+<img width="500" src="Image/머신러닝 재학습.png" />
+
+ 7-2. 특성 중요도 재확인
+ <img width="600" src="Image/머신러닝 재학습 중요도 재확인.png" />
+ 
+ 7-3. 특성 중요도 시각화
+ <img width="800" src="Image/머신러닝 재학습 중요도 시각화.png" />
+ 
+8) 모델 저장
+
 ### 3-2. 딥러닝 모델 학습 과정 및 튜닝
-1) 머신러닝
-   
-2) 딥러닝
+
    
 ### 3-3. 모델 평가에 사용된 평가 지표 설명
 1) 머신러닝
@@ -144,6 +163,9 @@ import matplotlib.pyplot as plt
 2) 딥러닝
 3) 
 ### 3-4. 최종 선정 모델에 대한 설명
+1) 머신러닝
+   
+2) 딥러닝
 
 <br/>
 
