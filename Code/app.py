@@ -88,6 +88,7 @@ set_data = ['Age', 'DailyRate', 'DistanceFromHome', 'Education',
 ml_model, dl_model = load_models()
 preprocessor = load_preprocessor()
 f_data = load_f_data()
+print(preprocessor)
 
 # Streamlit 앱 설정
 st.title('IBM HR 이직 예측 애플리케이션')
