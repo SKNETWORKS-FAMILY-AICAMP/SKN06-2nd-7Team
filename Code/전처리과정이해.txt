@@ -1,0 +1,28 @@
+get_dummies
+- X, y
+
+labelencoder - y
+
+smote - X, y
+
+monthlyincome_log 만들기
+
+data_cleaned - monthlyincome버리기
+
+이상치 처리 - 이상치 넘어가는 애들은 없앤다. 
+
+## 불필요한 열 제거
+
+수치형/범수형 구분
+
+범주형 - 카이 제곱
+
+피처 엔지니어링
+
+피처 엔지니어링을 통해 만들어진 피처 이상치 제거
+
+수치형 - standardscaler
+제거
+
+범주형
+제거
