@@ -38,13 +38,13 @@ class Net(nn.Module):
 
 @st.cache_resource
 def load_models():
-    with open('streamlit/Model/best_lr.pkl', 'rb') as f:  # 머신러닝 모델 불러오기 
+    with open('../Model/best_lr.pkl', 'rb') as f:  # 머신러닝 모델 불러오기 
         ml_model = pickle.load(f)
         print(type(ml_model))
 
     input_size = 38
     dl_model = Net(input_size)
-    dl_model.load_state_dict(torch.load('streamlit/Model/best_model.pth', map_location=torch.device('cpu')))  # 딥러닝 모델 불러오기 
+    dl_model.load_state_dict(torch.load('../Model/best_model.pth', map_location=torch.device('cpu')))  # 딥러닝 모델 불러오기 
     dl_model.eval()
 
     return ml_model, dl_model
@@ -174,9 +174,7 @@ if "select_model" not in st.session_state:
 else:
     prediction_value = st.session_state.prediction
     st.write(f"예측 결과: {'이직 가능성 있음' if prediction_value > 0.5 else '이직 가능성 낮음'}, 이직 확률: {prediction_value*100:.0f}%")
-
-    
-# if st.button("다시 시작"):
-#     for key in st.session_state.keys():
-#         del st.session_state[key]
-#     st.rerun()
+    if st.button("다시 시작"):
+        for key in st.session_state.keys():
+            del st.session_state[key]
+        st.rerun()
