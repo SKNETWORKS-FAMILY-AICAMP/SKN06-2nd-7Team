@@ -53,7 +53,7 @@ def load_models():
 @st.cache_resource
 def load_preprocessor():
     sys.path.append(os.getcwd()) # preprocessing.py의 사용자 전처리기들을 load하기위해서 현재 디렉토리를 파이썬 모듈 검색 경로에 추가. 
-    return joblib.load('../Model/preprocessor_pipeline.pkl')
+    return joblib.load('../Model/preprocessing_pipeline.pkl')
 
 def load_f_data():
     return pd.read_csv('../Data/f_data.csv')

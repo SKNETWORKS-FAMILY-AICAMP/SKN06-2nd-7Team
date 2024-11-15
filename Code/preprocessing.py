@@ -15,17 +15,20 @@ data = pd.read_csv('/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/D
 data['MonthlyIncome_Log'] = np.log1p(data['MonthlyIncome'])
 
 # 불필요한 열 제거
-columns_to_drop = ['MonthlyIncome', 'EmployeeCount', 'Over18', 'StandardHours']
+columns_to_drop = ['MonthlyIncome', 'EmployeeCount', 'Over18', 'StandardHours', 'EmployeeNumber']
 data_cleaned = data.drop(columns=columns_to_drop)
 
 # 이상치 처리 - IQR 방식으로 여러 변수 처리
 variables_to_process = ['NumCompaniesWorked', 'TrainingTimesLastYear', 'YearsSinceLastPromotion', 'YearsWithCurrManager']
+
 for feature in variables_to_process:
-    q1 = data_cleaned[feature].quantile(0.25)
-    q3 = data_cleaned[feature].quantile(0.75)
+    q1 = data[feature].quantile(0.25)
+    q3 = data[feature].quantile(0.75)
     iqr = q3 - q1
+
     lower_bound = q1 - 1.5 * iqr
     upper_bound = q3 + 1.5 * iqr
+
     data_cleaned = data_cleaned[(data_cleaned[feature] >= lower_bound) & (data_cleaned[feature] <= upper_bound)]
 
 # Feature Engineering - 새로운 특성 생성
