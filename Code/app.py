@@ -38,13 +38,13 @@ class Net(nn.Module):
 
 @st.cache_resource
 def load_models():
-    with open('streamlit/Model/best_lr.pkl', 'rb') as f:  # 머신러닝 모델 불러오기 
+    with open('../Model/best_lr.pkl', 'rb') as f:  # 머신러닝 모델 불러오기 
         ml_model = pickle.load(f)
         print(type(ml_model))
 
     input_size = 38
     dl_model = Net(input_size)
-    dl_model.load_state_dict(torch.load('streamlit/Model/best_model.pth', map_location=torch.device('cpu')))  # 딥러닝 모델 불러오기 
+    dl_model.load_state_dict(torch.load('../Model/best_model.pth', map_location=torch.device('cpu')))  # 딥러닝 모델 불러오기 
     dl_model.eval()
 
     return ml_model, dl_model
