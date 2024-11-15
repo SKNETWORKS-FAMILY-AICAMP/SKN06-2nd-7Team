@@ -38,9 +38,10 @@ class Net(nn.Module):
 
 @st.cache_resource
 def load_models():
-    with open('../Model/best_lr.pkl', 'rb') as f:  # 머신러닝 모델 불러오기 
-        ml_model = pickle.load(f)
-        print(type(ml_model))
+    joblib.load("../Model/best_lr.pkl")
+    # with open('../Model/best_lr.pkl', 'rb') as f:  # 머신러닝 모델 불러오기 
+    #     ml_model = pickle.load(f)
+    #     print(type(ml_model))
 
     input_size = 38
     dl_model = Net(input_size)
