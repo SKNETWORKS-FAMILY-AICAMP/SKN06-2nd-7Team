@@ -95,5 +95,5 @@ accuracy = pipeline.score(X_test, y_test)
 print(f"Test Accuracy: {accuracy:.2f}")
 
 # 파이프라인 저장 (joblib 사용)
-joblib.dump(pipeline, '/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/Model/preprocessing_pipeline.pkl')
+joblib.dump(preprocessor, '/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/Model/preprocessing_pipeline.pkl')
 print("Pipeline saved as 'preprocessing_pipeline.pkl'")
