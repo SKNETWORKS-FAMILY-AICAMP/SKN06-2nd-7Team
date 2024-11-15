@@ -17,7 +17,7 @@
 |:----------:|:----------:|:----------:|:----------:|
 | <img src="https://github.com/user-attachments/assets/7d90917b-71b8-40b9-9f98-0d415e239a74" alt="하늘" width="140" height="175" />  | <img src="https://github.com/user-attachments/assets/ea3612d5-1ea9-4569-a8b4-93e41bf4b3ef" alt="지원" width="140" height="175" />  | <img src="https://github.com/user-attachments/assets/affdd054-b3bb-4eb3-91fd-c84b0ef80eba" alt="민준" width="140" height="175" /> | <img src="https://github.com/user-attachments/assets/0919f569-653f-4074-b0bf-e11f15b7c3f9" alt="지영" width="140" height="175" />|
 | [@Haneul-Jo7](https://github.com/Haneul-Jo7) | [@giana-jw](https://github.com/giana-jw) | [@samking1234-Apple](https://github.com/samking1234-Apple) | [@yeong-ee](https://github.com/yeong-ee) |
-| 전처리, DL | 전처리, ML, git관리 | DL, streamlit | EDA, 전처리, ML |
+| 전처리, DL | DL, streamlit | 전처리, ML, git관리 | EDA, 전처리, ML |
 
 <br>
 
@@ -177,100 +177,99 @@ print(data_cleaned.columns)
 
 ## 02. 모델 학습 결과서
 ### 2-1. 머신러닝 모델 학습 과정 및 튜닝
-1) 변수 처리 및 분리
+1. 변수 처리 및 분리
   - 모델을 구성하기 전에 범주형 변수를 변화하고 타겟 변수를 인코딩하는 작업을 수행함.
 
-2) 모델 생성 및 학습
+2. 모델 생성 및 학습
   - 1차적으로 랜덤 포레스트 모델을 이용해서 학습을 진행함.
-<img width="500" src="Image/랜덤포레스트 모델 생성 및 학습.png" />
+<img width="450" src="Image/랜덤포레스트 모델 생성 및 학습.png" />
 
-3) 모델예측 및 평가
+3. 모델예측 및 평가
   - 과적합이 발생하지 않은 모델로 확인함.
-<img width="600" src="Image/랜덤 포레스트 모델 예측 및 평가.png" />
+<img width="450" src="Image/랜덤 포레스트 모델 예측 및 평가.png" />
 
-5) 특성 중요도 확인
+4. 특성 중요도 확인
   - 상위 10개 특성의 중요도를 확인함.
-<img width="600" src="Image/랜덤 포레스트 특성 중요도 확인.png" />
+<img width="450" src="Image/랜덤 포레스트 특성 중요도 확인.png" />
 
-5) 특성 중요도 시각화
+5. 특성 중요도 시각화
   - 상위 10개 특성을 도표로 시각화함.
-<img width="800" src="Image/랜덤 포레스트 특성 중요도 시각화.png" />
+<img width="600" src="Image/랜덤 포레스트 특성 중요도 시각화.png" />
 
-6) 모델 및 하이퍼파라미터 그리드 정의 (성능비교)
+6. 모델 및 하이퍼파라미터 그리드 정의 (성능비교)
  - Logistic Regression, Random Forest, 'XGBoost 이 3가지 모델로 성능 비교를 결정.
 
-7) 각 모델 그리드 서치 수행
-<img width="600" src="Image/성능비교 결과.png" />
+7. 각 모델 그리드 서치 수행
+<img width="450" src="Image/성능비교 결과.png" />
 
-8) 우수 모델 재학습 및 중요도 결과 산출
+8. 우수 모델 재학습 및 중요도 결과 산출
   - Logistic Regression이 가장 우수한 모델로 선정됨.
 
-8-1. 재학습
+8-1) 재학습
 
-<img width="500" src="Image/머신러닝 재학습.png" />
+<img width="450" src="Image/머신러닝 재학습.png" />
 
 
-8-2. 특성 중요도 재확인
+8-2) 특성 중요도 재확인
 
- <img width="600" src="Image/머신러닝 재학습 중요도 재확인.png" />
-
- 
-8-3. 특성 중요도 시각화
-
- <img width="800" src="Image/머신러닝 재학습 중요도 시각화.png" />
+ <img width="450" src="Image/머신러닝 재학습 중요도 재확인.png" />
 
  
-9) 모델 저장
+8-3) 특성 중요도 시각화
+
+ <img width="850" src="Image/머신러닝 재학습 중요도 시각화.png" />
+
+ 
+9. 모델 저장
 
 ### 2-2. 딥러닝 모델 학습 과정 및 튜닝
-1) 변수 처리 및 분리
+1. 변수 처리 및 분리
   - 머신러닝 모델처리와 동일하게 처리함. 
 
-2) 모델 생성 및 학습
+2. 모델 생성 및 학습
   - 신경망 모델로 학습을 진행함. 모델명 Net.
-<img width="500" src="Image/딥러닝 모델(신경망).png" />
+<img width="450" src="Image/딥러닝 모델(신경망).png" />
 
-3) 모델예측 및 평가
+3. 모델예측 및 평가
   - 초기 모델에 따른 평가 및 예측 진행. 
-<img width="600" src="Image/딥러닝 기초 결과.png" />
+<img width="450" src="Image/딥러닝 기초 결과.png" />
 
-4) 특성 중요도 확인
+4. 특성 중요도 확인
   - 상위 10개 특성의 중요도를 확인함.
-<img width="600" src="Image/딥러닝 기초모델 특성 중요도 확인.png" />
+<img width="450" src="Image/딥러닝 기초모델 특성 중요도 확인.png" />
 
-5) 특성 중요도 시각화
+5. 특성 중요도 시각화
   - 상위 10개 특성을 도표로 시각화함.
-<img width="800" src="Image/딥러닝 기초모델 특성 중요도 시각화.png" />
+<img width="950" src="Image/딥러닝 기초모델 특성 중요도 시각화.png" />
 
-6) 모델 및 하이퍼파라미터 그리드 정의 (성능비교)
+6. 모델 및 하이퍼파라미터 그리드 정의 (성능비교)
  - lr = [0.001, 0.0001, 0.00001]
  - epochs = [50, 100, 200]
  - 위의 하이퍼파라미터를 통해 best_model 선정
 
-7) 각 모델 그리드 서치 수행
-<img width="600" src="Image/deeplearning_trainingloss_gridsearchCV.png" />
-<img width="600" src="Image/deeplearning_trainingaccuracy_gridsearchCV.png" />
+7. 각 모델 그리드 서치 수행 <br>
+<img width="850" src="Image/deeplearning_trainingloss_gridsearchCV.png" /> <br>
+<img width="850" src="Image/deeplearning_trainingaccuracy_gridsearchCV.png" />
 
-8) 우수 모델 재학습 및 중요도 결과 산출
+8. 우수 모델 재학습 및 중요도 결과 산출
   - lr = 0.0001, epochs = 200 인 모델이 가장 우수한 모델로 선정됨.
 
-8-1. 우수 모델 학습 결과(train loss & accuracy)
+8-1) 우수 모델 학습 결과(train loss & accuracy)
 
-<img width="500" src="Image/딥러닝 베스트 모델 에측 및 평가.png" />
+<img width="450" src="Image/딥러닝 베스트 모델 에측 및 평가.png" />
 
 
-8-2. 우수 모델 특성 중요도 재확인
+8-2) 우수 모델 특성 중요도 재확인
 
- <img width="600" src="Image/우수모델특성중요도.png" />
+ <img width="630" src="Image/우수모델특성중요도.png" />
 
  
-8-3. 우수 모델 특성 중요도 시각화
+8-3) 우수 모델 특성 중요도 시각화
 - 해당 모델에서 중요하다고 판별된 특성들이 이직률에 긍정적인 영향을 끼치는지, 부정적인 영향을 끼치는지 확인.
-- 
- <img width="800" src="Image/top10featureOfBestmodel_deeplearning.png" />
+ <img width="900" src="Image/top10featureOfBestmodel_deeplearning.png" />
 
  
-9) 모델 저장
+9. 모델 저장
    
 ### 2-3. 모델 평가에 사용된 평가 지표 설명
 - 본 문제는 이진 분류 문제로서 평가지표로 sklearn.metrics에 있는 classification_report를 활용함.
@@ -280,11 +279,11 @@ print(data_cleaned.columns)
 ### 2-4. 최종 선정 모델에 대한 설명
 - 각 모델링 방법별 우수 모델을 최종 선정모델로 선택. 
 
-<br/>
+<br>
 
 <hr>
 
-<br/>
+<br>
 
 ## 03. 학습된 모델 & Service application
 ### 최종 모델을 이용해 추론하는 application을 streamlit을 이용해 구현한 코드
