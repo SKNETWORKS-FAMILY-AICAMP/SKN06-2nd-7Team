@@ -174,7 +174,16 @@ if "select_model" not in st.session_state:
 else:
     prediction_value = st.session_state.prediction
     st.write(f"예측 결과: {'이직 가능성 있음' if prediction_value > 0.5 else '이직 가능성 낮음'}, 이직 확률: {prediction_value*100:.0f}%")
+<<<<<<< HEAD
     if st.button("다시 시작"):
         for key in st.session_state.keys():
             del st.session_state[key]
         st.rerun()
+=======
+
+    
+# if st.button("다시 시작"):
+#     for key in st.session_state.keys():
+#         del st.session_state[key]
+#     st.rerun()
+>>>>>>> 2d200d1a85cbf88788f3178086ce8742d83207c2
