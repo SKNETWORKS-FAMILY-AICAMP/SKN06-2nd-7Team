@@ -300,13 +300,13 @@ print(f"Best model saved to {model_save_path}")
 
 ## 03. Streamlit 구현
 - streamlit app 첫 실행 화면
-<img src="https://github.com/user-attachments/assets/41441c7d-c263-4391-9e8b-c1808604e757" alt="streamlit(1)" style="float: left;" width="450" />
+<img src="https://github.com/user-attachments/assets/41441c7d-c263-4391-9e8b-c1808604e757" alt="streamlit(1)" style="float: left;" width="900" />
 
 - machinelearning model로 예측
-<img src="https://github.com/user-attachments/assets/d68dd531-c050-4512-81e2-f509271752b1" alt="streamlit(2)" style="float: left;" width="450" />
+<img src="https://github.com/user-attachments/assets/d68dd531-c050-4512-81e2-f509271752b1" alt="streamlit(2)" style="float: left;" width="900" />
 
 - deeplearning model로 예측
-<img src="https://github.com/user-attachments/assets/bade6fff-5570-427e-9a92-60df54bb25ac" alt="streamlit(3)" style="float: left;" width="450" />
+<img src="https://github.com/user-attachments/assets/bade6fff-5570-427e-9a92-60df54bb25ac" alt="streamlit(3)" style="float: left;" width="900" />
 
 
 ## 마무리 회고
