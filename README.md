@@ -298,8 +298,15 @@ print(f"Best model saved to {model_save_path}")
 
 <br>
 
-## 03. 학습된 모델 & Service application
-### 최종 모델을 이용해 추론하는 application을 streamlit을 이용해 구현한 코드
+## 03. Streamlit 구현
+- streamlit app 첫 실행 화면
+<img src="https://github.com/user-attachments/assets/41441c7d-c263-4391-9e8b-c1808604e757" alt="streamlit(1)" style="float: left;" width="450" />
+
+- machinelearning model로 예측
+<img src="https://github.com/user-attachments/assets/d68dd531-c050-4512-81e2-f509271752b1" alt="streamlit(2)" style="float: left;" width="450" />
+
+- deeplearning model로 예측
+<img src="https://github.com/user-attachments/assets/bade6fff-5570-427e-9a92-60df54bb25ac" alt="streamlit(3)" style="float: left;" width="450" />
 
 
 ## 마무리 회고
