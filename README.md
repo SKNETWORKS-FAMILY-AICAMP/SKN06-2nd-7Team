@@ -221,6 +221,11 @@ print(data_cleaned.columns)
 
  
 9. 모델 저장
+```bash
+best_lr = models1["Logistic Regression"]
+joblib.dump(best_lr, '/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/Model/best_lr.pkl')
+print("Models saved successfully.")
+```
 
 ### 2-2. 딥러닝 모델 학습 과정 및 튜닝
 1. 변수 처리 및 분리
@@ -270,10 +275,18 @@ print(data_cleaned.columns)
 
  
 9. 모델 저장
+```bash
+model_save_path = 'best_model.pth'
+torch.save(best_model.state_dict(), model_save_path)
+print(f"Best model saved to {model_save_path}")
+```
    
 ### 2-3. 모델 평가에 사용된 평가 지표 설명
-- 본 문제는 이진 분류 문제로서 평가지표로 sklearn.metrics에 있는 classification_report를 활용함.
-- precision, recall, f1-score 활용
+- MachineLearning
+<img src="https://github.com/user-attachments/assets/d30bcdc7-b690-47ae-92d7-f33b59260c8d" alt="score_ml_model" style="float: left;" width="450" />
+
+- DeepLearning
+<img src="https://github.com/user-attachments/assets/cbe3ee28-e3cc-4c0b-858b-8143ee6ee1f9" alt="score_dl_model" style="float: left;" width="450" />
 
   
 ### 2-4. 최종 선정 모델에 대한 설명
