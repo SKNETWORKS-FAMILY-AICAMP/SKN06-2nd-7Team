@@ -52,9 +52,18 @@ for feature in variables_to_process:
 
     data_cleaned = data_cleaned[(data_cleaned[feature] >= lower_bound) & (data_cleaned[feature] <= upper_bound)]
 
-# 수치형 및 범주형 변수 구분
-numerical_features = X.select_dtypes(include=['int64', 'float64']).columns.tolist()
-categorical_features = X.select_dtypes(include=['object']).columns.tolist()
+print(data_cleaned.columns.tolist())
+
+# 수치형 및 범주형 변수 구분 (data_cleaned에서 다시 추출)
+numerical_features = data_cleaned.select_dtypes(include=['int64', 'float64']).columns.tolist()
+categorical_features = data_cleaned.select_dtypes(include=['object']).columns.tolist()
+
+# 'Attrition'은 타겟 변수이므로 제외
+if 'Attrition' in categorical_features:
+    categorical_features.remove('Attrition')
+
+print("Numerical Features:", numerical_features)
+print("Categorical Features:", categorical_features)
 
 # 범주형 변수와 attrition 간의 카이제곱 검정
 for feature in categorical_features:
@@ -144,7 +153,6 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 # 전처리 파이프라인 생성
-
 # 수치형 변수 파이프라인: 결측값 대체 + 표준화
 numerical_pipeline = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='mean')),  # 결측값 평균 대체
@@ -159,8 +167,8 @@ categorical_pipeline = Pipeline(steps=[
 
 # 전체 전처리 파이프라인 구성 (수치형 + 범주형)
 preprocessor = ColumnTransformer(transformers=[
-    ('num', numerical_pipeline, numerical_features),
-    ('cat', categorical_pipeline, categorical_features)
+    ('num', numerical_pipeline, numerical_features),  # 수치형 변수 처리
+    ('cat', categorical_pipeline, categorical_features)  # 범주형 변수 처리
 ])
 
 # 최종 파이프라인 (전처리 + 모델)
@@ -170,7 +178,7 @@ pipeline = Pipeline(steps=[
 ])
 
 # 데이터 분할 (훈련 세트와 테스트 세트)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_selected, y_encoded, test_size=0.2, random_state=42)
 
 # 모델 학습
 pipeline.fit(X_train, y_train)
@@ -178,6 +186,7 @@ pipeline.fit(X_train, y_train)
 # 모델 평가 (테스트 세트)
 accuracy = pipeline.score(X_test, y_test)
 print(f"Test Accuracy: {accuracy:.2f}")
+
 
 # 파이프라인 저장 (joblib 사용)
 joblib.dump(preprocessor, '/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/Model/preprocessing_pipeline.pkl')
