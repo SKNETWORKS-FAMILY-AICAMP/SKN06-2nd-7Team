@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 import joblib
 
 # 데이터 로드 (파일 경로는 필요에 맞게 수정)
-data = pd.read_csv('/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/Data/HR_Employee.csv')
+data = pd.read_csv('../Data/HR_Employee.csv')
 
 # 이상치 처리 - MonthlyIncome 로그 변환
 data['MonthlyIncome_Log'] = np.log1p(data['MonthlyIncome'])
