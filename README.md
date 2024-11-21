@@ -221,6 +221,11 @@ print(data_cleaned.columns)
 
  
 9. 모델 저장
+```bash
+best_lr = models1["Logistic Regression"]
+joblib.dump(best_lr, '/Users/j/Desktop/AI camp/2차 프로젝트/SKN06-2nd-7Team/Model/best_lr.pkl')
+print("Models saved successfully.")
+```
 
 ### 2-2. 딥러닝 모델 학습 과정 및 튜닝
 1. 변수 처리 및 분리
@@ -270,10 +275,18 @@ print(data_cleaned.columns)
 
  
 9. 모델 저장
+```bash
+model_save_path = 'best_model.pth'
+torch.save(best_model.state_dict(), model_save_path)
+print(f"Best model saved to {model_save_path}")
+```
    
 ### 2-3. 모델 평가에 사용된 평가 지표 설명
-- 본 문제는 이진 분류 문제로서 평가지표로 sklearn.metrics에 있는 classification_report를 활용함.
-- precision, recall, f1-score 활용
+- MachineLearning
+<img src="https://github.com/user-attachments/assets/d30bcdc7-b690-47ae-92d7-f33b59260c8d" alt="score_ml_model" style="float: left;" width="450" />
+
+- DeepLearning
+<img src="https://github.com/user-attachments/assets/cbe3ee28-e3cc-4c0b-858b-8143ee6ee1f9" alt="score_dl_model" style="float: left;" width="450" />
 
   
 ### 2-4. 최종 선정 모델에 대한 설명
@@ -285,8 +298,15 @@ print(data_cleaned.columns)
 
 <br>
 
-## 03. 학습된 모델 & Service application
-### 최종 모델을 이용해 추론하는 application을 streamlit을 이용해 구현한 코드
+## 03. Streamlit 구현
+- streamlit app 첫 실행 화면
+<img src="https://github.com/user-attachments/assets/41441c7d-c263-4391-9e8b-c1808604e757" alt="streamlit(1)" style="float: left;" width="900" />
+
+- machinelearning model로 예측
+<img src="https://github.com/user-attachments/assets/d68dd531-c050-4512-81e2-f509271752b1" alt="streamlit(2)" style="float: left;" width="900" />
+
+- deeplearning model로 예측
+<img src="https://github.com/user-attachments/assets/bade6fff-5570-427e-9a92-60df54bb25ac" alt="streamlit(3)" style="float: left;" width="900" />
 
 
 ## 마무리 회고
@@ -295,4 +315,4 @@ print(data_cleaned.columns)
 GPT모델이 많은 요즘, 양질의 데이터를 생산하는 것이 더욱 가치가 있을 수 있겠다는 생각을 하게 되었습니다. 실제로 데이터를 구할 때도 쓸만한 데이터는 다 금액을 요청한다는 것을 보고 더욱 절실히 느끼게 되었습니다. <br>
 🐶 지원: 너무 어려워요 <br>
 🦝 민준: 실제로 진행해보니 더 이해가 잘되는 시간이었던 것 같습니다. 자료조사부터 생각보다 힘들었지만 팀원들이 있어 든든했습니다! <br>
-🐱 지영:
+🐱 지영: EDA와 데이터 전처리부터 머신러닝, 딥러닝으로 시스템을 개발하는 흐름을 잘 파악할 수 있었던 프로젝트였습니다. 특히, EDA와 데이터 전처리에 있어 효과적인 처리 방법을 알아보고 적용하는 데 있어 복습할 수 있는 시간을 가질 수 있었습니다. 이번 프로젝트에서는 주로 데이터를 가공하는 데에 초점을 둔 역할을 맡았는데, 다음 프로젝트에서는 streamlit 앱을 구축하는 역할도 맡아보고 싶습니다!
