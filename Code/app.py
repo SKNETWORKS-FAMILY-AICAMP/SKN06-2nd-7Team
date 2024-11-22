@@ -229,17 +229,20 @@ elif menu == "Predictor📱":
     st.write(f"{st.session_state.select_model} 모델을 선택하셨습니다.")
     st.write("아래 데이터를 입력해주세요.")
     # MaritalStatus = st.selectbox('혼인여부', ("Divorced", "Married", "Single"))
-    Department = st.selectbox('부서', ['Sales', 'Research & Development', 'Human Resources'])
+    # Department = st.selectbox('부서', ['Sales', 'Research & Development', 'Human Resources'])
     NumCompaniesWorked = st.number_input('근무경험', min_value=0, max_value=15)
     JobRole = st.selectbox('직무', ["Healthcare Representative", "Human Resources", "Laboratory", "Technician", 'Manager', "Manufacturing Director", "Research Director", "Research", "Scientist", "Sales Executive", "Sales Representative"])  # 가능한 직무 리스트
     # YearsInCurrentRole = st.number_input('근속기간', min_value=0, max_value=50)
     # MonthlyRate = st.number_input('월급($)', min_value=2000, max_value=40000)
     BusinessTravel = st.selectbox('해외출장 빈도', ("Travel_Frequently", "Travel_Rarely", "Non_Travel"))
     OverTime = st.radio("초과근무 여부", ["No", "Yes"])
-    JobInvolvement = st.select_slider("직무 몰입도", options=["1", "2", "3", "4"])
+    # JobInvolvement = st.select_slider("직무 몰입도", options=["1", "2", "3", "4"])
+    JobSatisfaction = st.select_slider("직무 만족도", options=["1", "2", "3", "4"])
+    EnvironmentSatisfaction = st.select_slider("환경 만족도", options=["1", "2", "3", "4"])
+    
 
     if st.button(f"Predict"):
-        input_data = pd.DataFrame([[Department, NumCompaniesWorked, JobRole, BusinessTravel, OverTime, JobInvolvement]], columns=['Department', 'NumCompaniesWorked', 'JobRole', 'BusinessTravel', 'OverTime', 'JobInvolvement'])  
+        input_data = pd.DataFrame([[NumCompaniesWorked, JobRole, BusinessTravel, OverTime, JobSatisfaction, EnvironmentSatisfaction]], columns=['NumCompaniesWorked', 'JobRole', 'BusinessTravel', 'OverTime', 'JobSatisfaction', 'EnvironmentSatisfaction'])  
     
         # f_data를 기준으로 부족한 컬럼 채우기
         for column in f_data.columns:
